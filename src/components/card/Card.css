@@ -1,0 +1,104 @@
+.card {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 20rem;
+  width: 13rem;
+  padding: 0.5rem 0.5rem 0 0.5rem;
+  border: 0.5px solid rgb(136, 136, 136);
+}
+
+.card:hover {
+  border: 0.5px solid rgb(206, 217, 142);
+}
+
+.card-grid {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1rem;
+  height: auto;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.imagen-dent > img {
+  height: 200px;
+  position: relative;
+  top: -0.7rem;
+}
+
+.card a {
+    text-decoration: none;
+    color: inherit; /* Mantener el color del texto */
+  }
+
+  .card a.dark{
+    color: white;
+    font-weight: bold;
+  }
+
+  .card a:hover{
+    color: gray;
+  }
+
+.username {
+  margin-top: 0.5rem;
+  font-size: 12px;
+  text-align: center;
+}
+
+.username.dark{
+  color: white;
+}
+
+.button-fav {
+  width: 12.4rem;
+  height: 2rem;
+  font-size: 20px;
+  border: none;
+  transition: all .2s ease-in-out;
+}
+
+
+.button-fav:hover {
+    cursor: pointer;
+    border-inline: none;
+  }
+
+  .button-fav.dark{
+    background-color: rgb(49, 49, 49);
+    border: 2px solid white;
+    border-radius: 5px;
+  }
+
+  .button-fav.dark:hover{
+    background-color: rgb(99, 98, 98);
+  }
+
+@media (min-width: 768px) {
+  .card {
+    z-index: 0;
+  }
+}
+
+@media (max-width: 534px) {
+  .card {
+    width: 18rem;
+    height: 27rem;
+  }
+  .imagen-dent > img {
+    width: 17rem;
+    height: 17rem;
+    top: -0.5rem;
+  }
+  .username {
+    margin-top: 2rem;
+  }
+
+  .button-fav {
+    width: 17.3rem;
+    height: 2.8rem;
+  }
+}

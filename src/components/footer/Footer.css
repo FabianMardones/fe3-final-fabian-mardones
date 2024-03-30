@@ -1,0 +1,69 @@
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 2rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 7rem;
+  }
+
+.footer-dh > img{
+    position: relative;
+    width: 200px;
+    right: 10%;
+}
+
+.icon{
+    max-height: 30px;
+    gap: 20px;
+  }
+  
+
+  .imagen-invertida{
+    filter: invert(100%);
+  }
+
+  .imagen-invertida.dark{
+    filter: invert(0%);
+  }
+
+  .footer-hd-img.dark{
+    filter: invert(100%);
+  }
+
+  
+  .icons-group{
+    position: relative;
+    left: 1%;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+  }
+  
+  .icon{
+    max-height: 30px;
+    gap: 20px;
+  }
+
+  .mensaje{
+    display: block;
+    padding: 0.5rem;
+    background: red;
+    text-align: center;
+  }
+
+  .mensaje.dark{
+    background-color: black;
+  }
+
+  .mensaje > h3{
+    color: white;
+  }
+
+
+  .footer_container.dark{
+    background-color: rgb(49, 49, 49);
+  }

@@ -1,0 +1,142 @@
+
+html{
+    font-family: poppins;
+}
+
+.title_home{
+    padding: 10px 0;
+    text-align: center;
+}
+
+.title_home.dark{
+    color: white;
+}
+
+.home {
+    max-width: 63vw;
+    width: 61vw;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 2fr)); /* Columnas automáticas con mínimo de 200px */
+    grid-auto-rows: auto; /* Altura automática para cada fila */
+    gap: 1rem; /* Espacio entre tarjetas */
+    overflow-y: auto; /* Agregar desplazamiento vertical si hay muchas tarjetas */
+    padding-bottom: 3rem;
+}
+
+.body.dark{
+    background-color: rgb(49, 49, 49);
+}
+
+.favs_cont{
+    max-height: 100vh;
+    height: 71vh;
+    overflow-y: auto;
+}
+
+
+.favs_cont.dark{
+    background-color: rgb(49, 49, 49);
+}
+
+.favs_cont.dark > h2{
+   color: white;
+}
+
+@media (min-height: 936px) {
+    .favs_cont{
+        height: 78vh;
+    }
+}
+
+.text_fav{
+    max-width: 100vw;
+    width: 55vw;
+    margin-left: 20%;
+    text-align: center;
+    margin-top: 10rem;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 760px) {
+    .text_fav{
+        margin-left: 0%;
+        width: 75vw;
+    }
+}
+
+
+.text_fav.dark{
+    color: white;
+}
+
+.contacto_contenedor{
+    max-height: 80vh;
+    height: 35rem;
+    padding: 2rem;
+}
+
+@media (min-width: 1550px) and (min-height: 940px){
+    .contacto_contenedor{
+        height: 48rem;
+    }
+}
+.contacto_contenedor.dark{
+    background-color: rgb(49, 49, 49);
+}
+
+.detail-dentist > h2{
+    text-align: center;
+   }
+
+   .detail-dentist.dark > h2{
+    color: white;
+   }
+
+table {
+    border-collapse: collapse;
+       border-spacing: 0;
+       width: 65%;
+       display: table;
+       border: 1px solid #ccc;
+       margin: 10% 0% 0% 18%;
+   }
+   
+   td, th {
+     border: 1px solid #dddddd;
+     text-align: left;
+     padding: 8px;
+   }
+
+   th.dark{
+    color: white;
+   }
+   
+   tr:nth-child(even) {
+     background-color: #dddddd;
+   }
+
+
+@media (min-width: 1744px){
+    .home{
+        width: 59vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .home{
+        max-width: 80%;
+        width: 100%;
+    }
+}
+
+@media (max-width: 538px) {
+    .home{
+        overflow: hidden;
+    }
+}
+
+
+
+
+
