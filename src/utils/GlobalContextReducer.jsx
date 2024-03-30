@@ -1,6 +1,6 @@
 import { createContext, useContext, useEffect, useReducer } from "react";
 
-export const ContextGolbalReduce = createContext();
+export const ContextGlobal = createContext();
 
 export const initialState = {
   darkMode: localStorage.getItem('darkMode') === 'true',
@@ -44,7 +44,7 @@ const objectReducer = (state, action) => {
   }
 };
 
-export const ContextProviderReduce = ({ children }) => {
+export const ContextProvider = ({ children }) => {
   const [state, dispatch] = useReducer(objectReducer, initialState);
 
   useEffect(() => {
@@ -60,10 +60,10 @@ export const ContextProviderReduce = ({ children }) => {
   let data = { state, dispatch };
 
   return (
-    <ContextGolbalReduce.Provider value={data}>
+    <ContextGlobal.Provider value={data}>
       {children}
-    </ContextGolbalReduce.Provider>
+    </ContextGlobal.Provider>
   );
 };
 
-export const useGlobalReduceStates = () => useContext(ContextGolbalReduce);
+export const useGlobalReduceStates = () => useContext(ContextGlobal);

@@ -17,10 +17,10 @@ html{
     width: 61vw;
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 2fr)); /* Columnas automáticas con mínimo de 200px */
-    grid-auto-rows: auto; /* Altura automática para cada fila */
-    gap: 1rem; /* Espacio entre tarjetas */
-    overflow-y: auto; /* Agregar desplazamiento vertical si hay muchas tarjetas */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 2fr));
+    grid-auto-rows: auto;
+    gap: 1rem;
+    overflow-y: auto;
     padding-bottom: 3rem;
 }
 

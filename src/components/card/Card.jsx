@@ -1,5 +1,3 @@
-// Card.js
-import { useGlobalStates } from "../../utils/GlobalContext";
 import { useGlobalReduceStates } from "../../utils/GlobalContextReducer";
 import "./Card.css";
 import { Link } from "react-router-dom";

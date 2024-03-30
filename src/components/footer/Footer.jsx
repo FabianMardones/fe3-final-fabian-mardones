@@ -14,7 +14,7 @@ export function Footer() {
   return (
     <div className={`footer_container ${state.darkMode && 'dark'}`}>
     <div className={`mensaje ${state.darkMode && 'dark'}`}>
-        <h3>Mensaje</h3>
+        <h3>Proyecto Final DH F3 III - REACT - {new Date().getFullYear().toString()}</h3>
     </div>
     <footer className={`footer ${state.darkMode && 'dark'}`}>
       <div className={`footer-dh ${state.darkMode && 'dark'}`}>
